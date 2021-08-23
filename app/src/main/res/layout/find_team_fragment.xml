@@ -6,17 +6,20 @@
     tools:context=".view.findTeam.FindTeamFragment">
 
     <LinearLayout
-        android:orientation="vertical"
-        android:padding="16dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <include android:id="@+id/back" layout="@layout/layout_back"/>
+        <include
+            android:id="@+id/back"
+            layout="@layout/layout_back" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_find_team"
             android:layout_width="match_parent"
-            android:layout_marginTop="15dp"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" />
     </LinearLayout>
 
 </FrameLayout>

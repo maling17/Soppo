@@ -87,4 +87,6 @@
     <string name="manage_player">Manage Player</string>
     <string name="did_not_receive_verification_code">Did not receive Verification Code?</string>
     <string name="send_otp">Send OTP</string>
+    <string name="what_game_do_you_wanna_play">What game do you wanna play?</string>
+    <string name="view_all">View all</string>
 </resources>
