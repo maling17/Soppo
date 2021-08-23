@@ -1,0 +1,846 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Soppo" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryVariant">@color/cream</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/orange</item>
+        <item name="colorSecondaryVariant">@color/cream</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="shapeButtonActive" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="shapeAppearance">@style/shapeRounded</item>
+        <item name="backgroundTint">@color/orange_20</item>
+        <item name="strokeColor">@color/orange</item>
+    </style>
+    <style name="shapeButtonInactive" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="shapeAppearance">@style/shapeRounded</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="strokeColor">@color/orange</item>
+    </style>
+
+    <style name="shapeRounded" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <!-- GREY -->
+    <style name="text12BoldGray">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text14BoldGray">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text18BoldGray">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text24BoldGray">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text32BoldGray">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text12RegularGray">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text14RegularGray">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text18RegularGray">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text24RegularGray">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text32RegularGray">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text12LightGray">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text14LightGray">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text18LightGray">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text24LightGray">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text32LightGray">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text12ExtraBoldGray">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="text14ExtraBoldGray">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="text18ExtraBoldGray">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="text24ExtaBoldGray">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="text32ExtraBoldGray">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+      <!-- BLACK -->
+    <style name="text12BoldBlack">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text14BoldBlack">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text18BoldBlack">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text24BoldBlack">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text32BoldBlack">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text12RegularBlack">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text14RegularBlack">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text18RegularBlack">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text24RegularBlack">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text32RegularBlack">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="text12LightBlack">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text14LightBlack">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text18LightBlack">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text24LightBlack">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text32LightBlack">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text12ExtraBoldBlack">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text14ExtraBoldBlack">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text18ExtraBoldBlack">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text24ExtaBoldBlack">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text32ExtraBoldBlack">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+        <!-- Blue -->
+    <style name="text12BoldBlue">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/black_blue</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text14BoldBlue">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/black_blue</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text18BoldBlue">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/black_blue</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text24BoldBlue">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/black_blue</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text32BoldBlue">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/black_blue</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text12RegularBlue">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/black_blue</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text14RegularBlue">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/black_blue</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text18RegularBlue">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/black_blue</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text24RegularBlue">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/black_blue</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text32RegularBlue">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/black_blue</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="text12LightBlue">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/black_blue</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text14LightBlue">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/black_blue</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text18LightBlue">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/black_blue</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text24LightBlue">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/black_blue</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text32LightBlue">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/black_blue</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text12ExtraBoldBlue">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/black_blue</item>
+    </style>
+
+    <style name="text14ExtraBoldBlue">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/black_blue</item>
+    </style>
+
+    <style name="text18ExtraBoldBlue">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/black_blue</item>
+    </style>
+
+    <style name="text24ExtaBoldBlue">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/black_blue</item>
+    </style>
+
+    <style name="text32ExtraBoldBlue">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/black_blue</item>
+    </style>
+
+     <!-- White -->
+    <style name="text12BoldWhite">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text14BoldWhite">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text18BoldWhite">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text24BoldWhite">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text32BoldWhite">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text12RegularWhite">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text14RegularWhite">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text18RegularWhite">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text24RegularWhite">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text32RegularWhite">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text12LightWhite">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text14LightWhite">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text18LightWhite">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text24LightWhite">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text32LightWhite">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text12ExtraBoldWhite">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text14ExtraBoldWhite">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text18ExtraBoldWhite">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text24ExtaBoldWhite">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text32ExtraBoldWhite">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+     <!-- Orange -->
+    <style name="text12BoldOrange">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text14BoldOrange">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text18BoldOrange">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text24BoldOrange">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text32BoldOrange">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text12RegularOrange">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text14RegularOrange">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text18RegularOrange">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text24RegularOrange">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text32RegularOrange">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text12LightOrange">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text14LightOrange">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text18LightOrange">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text24LightOrange">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text32LightOrange">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text12ExtraBoldOrange">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="text14ExtraBoldOrange">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="text18ExtraBoldOrange">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="text24ExtaBoldOrange">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="text32ExtraBoldOrange">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <!-- Cream -->
+    <style name="text12BoldCream">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/cream</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text14BoldCream">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/cream</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text18BoldCream">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/cream</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text24BoldCream">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/cream</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text32BoldCream">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/cream</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text12RegularCream">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/cream</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text14RegularCream">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/cream</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text18RegularCream">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/cream</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text24RegularCream">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/cream</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text32RegularCream">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/cream</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text12LightCream">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/cream</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text14LightCream">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/cream</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text18LightCream">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/cream</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text24LightCream">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/cream</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text32LightCream">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli_light</item>
+        <item name="android:textColor">@color/cream</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text12ExtraBoldCream">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/cream</item>
+    </style>
+
+    <style name="text14ExtraBoldCream">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/cream</item>
+    </style>
+
+    <style name="text18ExtraBoldCream">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/cream</item>
+    </style>
+
+    <style name="text24ExtaBoldOCream">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/cream</item>
+    </style>
+
+    <style name="text32ExtraBoldCream">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/muli_extrabold</item>
+        <item name="android:textColor">@color/cream</item>
+    </style>
+
+</resources>
