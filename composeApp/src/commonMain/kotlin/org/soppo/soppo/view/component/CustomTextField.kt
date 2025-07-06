@@ -28,10 +28,6 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 import org.soppo.soppo.view.component.CustomTextField.Basic
 import org.soppo.soppo.view.themes.Colors
 import org.soppo.soppo.view.themes.MulishFontFamily
-import soppo.composeapp.generated.resources.Res
-import soppo.composeapp.generated.resources.__IconSoppo
-import soppo.composeapp.generated.resources.iconsoppo
-import soppo.composeapp.generated.resources.
 
 @Preview
 @Composable
@@ -42,11 +38,10 @@ fun PreviewTextField() {
         "example@email.com",
         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email),
         trailIcon = {
-            Icon(
-                ,
-                contentDescription = "",
-                tint = Color.Black
-            )
+           /* Icon(
+                imageVector = Re,
+                contentDescription = "Tambah"
+            )*/
         }
     )
 }
