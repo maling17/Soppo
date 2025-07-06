@@ -17,6 +17,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
@@ -24,10 +25,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
 import org.soppo.soppo.view.component.CustomTextField.Basic
 import org.soppo.soppo.view.themes.Colors
 import org.soppo.soppo.view.themes.MulishFontFamily
+import soppo.composeapp.generated.resources.Res
+import soppo.composeapp.generated.resources.ic_add
 
 @Preview
 @Composable
@@ -38,10 +42,11 @@ fun PreviewTextField() {
         "example@email.com",
         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email),
         trailIcon = {
-           /* Icon(
-                imageVector = Re,
-                contentDescription = "Tambah"
-            )*/
+            Icon(
+                painter = painterResource(Res.drawable.ic_add) ,
+                contentDescription = "Tambah",
+                tint = Color.Black
+            )
         }
     )
 }
@@ -68,7 +73,7 @@ object CustomTextField {
 
         ) {
 
-            Row(modifier = Modifier.fillMaxWidth()) {
+            Row(modifier = Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
 
                 if (leadingIcon != null) {
                     leadingIcon.invoke()
